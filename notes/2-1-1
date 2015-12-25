@@ -1,0 +1,16 @@
+2.1
+int is an integer type guaranteed to be a minimum of 16 bits in length
+(usually 32 in practice)
+long is an integer type guaranteed to be a minimum of 32 bits in length
+(usually 32 in practice)
+long long is guaranteed to be a min of 64 bits in length
+boolean has no set minimum size, could be represented by a single bit
+A signed type can take both negative and positive values. In contrast,
+an unsigned type can only take positive values, so it's maximum is twice as
+large as that of a signed type
+2.2
+To calculate a mortgage, I would use an unsigned int for principal, unsigned int 
+for payment and double for rate.
+Principal and payment are non-negative, and we want fixed precision for those
+rather than floating precision.
+Rate is a decimal fractional value, so we typically want to store it as a double
